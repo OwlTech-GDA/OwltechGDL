@@ -1,13 +1,13 @@
 import { useState } from "react";
 import "./App.css";
-import WhatIs from "./components/WhatIs";
+import WhatIs from "./components/WhatIs/WhatIs";
 import TopBar from "./components/TopBar";
-import MisionVision from "./components/MisionVision";
-import Robomaster from "./components/Robomaster";
-import Members from "./components/Members";
-import Robots from "./components/Robots";
-import Sponsors from "./components/Sponsors";
-import Contact from "./components/Contact";
+import MisionVision from "./components/MisionVision/MisionVision";
+import Robomaster from "./components/Robomaster/Robomaster";
+import Members from "./components/Members/Members";
+import Robots from "./components/Robots/Robots";
+import Sponsors from "./components/Sponsors/Sponsors";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const [count, setCount] = useState(0);
