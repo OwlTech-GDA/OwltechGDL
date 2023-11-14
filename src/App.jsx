@@ -10,8 +10,6 @@ import Sponsors from "./components/Sponsors/Sponsors";
 import Contact from "./components/Contact/Contact";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <TopBar />
