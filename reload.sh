@@ -1,11 +1,15 @@
 #!/bin/bash
-if ( git branch --list == 'dev-docker'); then
-	echo "aslmpositivo"
+if ( $(git branch | grep '*' | awk '{ print $2 }') == 'dev-docker'); then
+	echo "Already in branch!"
 else
-	echo "aslm"
-	git switch 'dev-docker'
-	git branch --list
+	echo "Changing to 'dev-docker'"
+	git checkout 'dev-docker'
 fi
 
 git pull
-npm run dev
+git reset --hard
+
+return 0
+
+docker build -t Owltech-Vite .
+docker run -d -p 5173:5173 --name Owltech-Vite-App Owltech-Vite
