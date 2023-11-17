@@ -1,5 +1,7 @@
 FROM centos:8
 
-COPY OwltechGDL /home
+RUN mkdir OwltechGDL
+
+COPY . ./OwltechGDL
 
 EXPOSE 80
