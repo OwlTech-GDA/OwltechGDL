@@ -11,4 +11,6 @@ git pull
 git reset --hard
 
 docker build -t owltech-vite .
+docker stop Owltech-Vite-App
+docker rm Owltech-Vite-App
 docker run -d -p 5173:5173 --name Owltech-Vite-App owltech-vite
