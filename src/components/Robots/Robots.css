@@ -1,0 +1,28 @@
+.robotsWrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+.topFrame {
+    background-color:var(--purple1);
+    width: 100%;
+    height: 15%;
+    position:absolute;
+    top:0;
+    left:0;
+    font-size:40px;
+    font-weight: bold;
+    float:center;
+
+}
+.designFrame{
+
+    width:100px;
+    height:50px;
+
+}
+
+.robotsWrapper{
+    width: 100%;
+    height: 100vh;
+}
