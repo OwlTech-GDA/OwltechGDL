@@ -9,7 +9,6 @@ import Robots from "./components/Robots/Robots.jsx";
 import Sponsors from "./components/Sponsors/Sponsors.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 
-
 function App() {
   const [count, setCount] = useState(0);
 
@@ -24,7 +23,6 @@ function App() {
       {/* <Sponsors />
       <Contact /> */}
     </div>
-    
   );
 }
 
