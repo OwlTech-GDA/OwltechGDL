@@ -4,19 +4,29 @@
 }
 
 .topFrame {
-  background-color: var(--purple1);
+  background-color: #580950;
   width: 100%;
   height: 15vh;
-  font-size: 40px;
+
+  /*Text design*/
+  font-size: 55px;
   font-weight: bold;
-  float: center;
+  color:white;
+
+  /*Centering text*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .designFrame {
-  width: 100px;
-  height: 50px;
+  width: 100%;
+  height: 5vh;
+  background-size:contain;
 }
 
 .robotsWrapper {
   width: 100%;
   height: 100vh;
+  
 }
+
