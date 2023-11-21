@@ -16,9 +16,9 @@ function App() {
     <div className="body">
       {/* <TopBar />
       <WhatIs />
-      <MisionVision />
+      <MisionVision />*/
       <Robomaster />
-      <Members /> */}
+      /*<Members /> */}
       <Robots />
       {/* <Sponsors />
       <Contact /> */}

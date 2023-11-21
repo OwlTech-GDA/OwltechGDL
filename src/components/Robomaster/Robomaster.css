@@ -1,0 +1,20 @@
+.title{
+    padding-top:150px;
+    font-size:72px;
+    text-decoration:underline;
+    text-underline-offset:1em;
+    display:flex;
+    justify-content:center;
+}
+
+.description{
+    
+    font-size:48px;
+    padding-top:100px;
+    
+    padding-right:200px;
+    padding-left:200px;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+}
