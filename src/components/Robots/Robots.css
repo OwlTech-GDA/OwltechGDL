@@ -29,4 +29,55 @@
   height: 100vh;
   
 }
+ /*For the robots images*/
+.Card{
+  width:36%;
+  height:20vh;
+  display:flex;
+  justify-content: center;
+}
+.robImg{
+  
+  width:36%;
+  height:20vh;
+  background-size:contain;
+  background-repeat: no-repeat;
+  
+}
+.allCardsImg{
+  padding-top:120px;
+  display: flex;
+  justify-content: space-between;
+}
+/*For the robots images*/
+.allCardsTxtTitle{
+  padding-top:80px;
+  display: flex;
+  justify-content: space-between;
+}
+.CardTextTitle{
+  width:36%;
+  color:white;
+  font-size: 48px;
+  text-decoration:underline;
+  text-underline-offset:0.5em;
 
+  display:flex;
+  justify-content: center;
+}
+/*For the robots descriptions*/
+.allCardsTxt{
+  display: flex;
+  justify-content: space-between;
+}
+.CardText{
+  padding-top:50px;
+  padding-right:100px;
+  padding-left:100px;
+  width:36%;
+  color:white;
+  font-size: 36px;
+  text-align:center;
+  display:flex;
+  justify-content: center;
+}
