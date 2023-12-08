@@ -4,7 +4,7 @@
   height: 100vh;
   color: white;
   position: relative;
-  overflow: hidden; /* Add this line */
+  overflow: hidden;
 }
 
 .text-container {
