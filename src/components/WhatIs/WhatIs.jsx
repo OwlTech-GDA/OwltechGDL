@@ -7,18 +7,22 @@ export default function WhatIs() {
     <div className="whatis-body">
       <div
         className="img-side"
-        style={{ backgroundImage: `url("../../assets/whatit-bg.png")` }}
+        style={{ backgroundImage: `url("src/assets/whatit-bg.png")` }}
       >
         <img src={logo} />
+        <div className="opacity-bg" />
       </div>
       <div className="text-side">
-        <h2>¿Qué es OwlTech?</h2>
-        <p>
-          Owltech es un grupo estudiantil que se enfoca en la competencia
-          Robomaster en la cual sus miembros pueden desarrollar hábilidades
-          relacionadas a los temas robótica, programación, electrónica y
-          mecánica
-        </p>
+        <div className="text-wrapper">
+          <p className="whatis-title">¿Qué es OwlTech?</p>
+          <div />
+          <p className="whatis-text">
+            Owltech es un grupo estudiantil que se enfoca en la competencia
+            Robomaster en la cual sus miembros pueden desarrollar hábilidades
+            relacionadas a los temas robótica, programación, electrónica y
+            mecánica
+          </p>
+        </div>
       </div>
     </div>
   );
