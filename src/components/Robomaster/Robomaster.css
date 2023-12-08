@@ -1,59 +1,58 @@
+.robomaster-body {
+  background-color: #34052f;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  position: relative;
+  overflow: hidden; /* Add this line */
+}
 
+.text-container {
+  display: flex;
+  padding: 0 200px;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: 50px;
+  font-size: 50px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 0.7em;
+}
+
+.description {
+  font-size: 30px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
 
 .superiorImg {
-    
-    width:40%;
-    height:40vh;
-    background-size:contain;
-    position:absolute;
-        left:0px;
-        top:0px;
-    /*clip-path: inset(185px 0px 0px 185px); /*top, right,bottim,left*/
-    margin: -180px 0px 0px -100px; 
-    transform: scale(1.5);
-    background-repeat: no-repeat;
-    opacity:0.2;
+  width: 40%;
+  height: 40vh;
+  background-size: contain;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: -180px 0px 0px -100px;
+  transform: scale(1.5);
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
 
-}
-.superiorImg #title {
-    width:100%;
-    height:15vh;
-    font-size:50px;
-    color:white;
-    position:absolute;
-            left:440px;
-            top:300px;
-            justify-content:center;
-    text-align:center;
-    opacity: 1 !important;
-    text-decoration:underline;
-    text-underline-offset:0.7em;
-}
-.superiorImg .description{
-    width:100%;
-    height:5vh;
-    font-size:30px;
-    color:white;
-    position:absolute;
-            left:430px;
-            top:450px;
-    opacity: 1 !important;
-    justify-content:center;
-    text-align:center;
-    
-    
-}
-.bottomImg{
-    width:40%;
-    height:40vh;
-    background-size:contain;
-    position:absolute;
-        left:800px;
-        top:200px;
-    /*clip-path: inset(185px 0px 0px 185px); /*top, right,bottim,left*/
-    margin: 480px 0px 0px 300px; 
-    transform: scale(2);
-    background-repeat: no-repeat;
-    opacity:0.2;
-
+.bottomImg {
+  position: absolute;
+  width: 25%;
+  aspect-ratio: 1/1;
+  right: 0;
+  bottom: 0;
+  background-size: contain;
+  transform: scale(2);
+  background-repeat: no-repeat;
+  opacity: 0.2;
 }
