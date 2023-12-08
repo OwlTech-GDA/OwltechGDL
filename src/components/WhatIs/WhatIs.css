@@ -48,10 +48,12 @@
 
 .whatis-title {
   font-size: 48px;
+  font-weight: bold;
 }
 
 .whatis-text {
   font-size: 32px;
+  font-weight: bold;
 }
 
 .text-wrapper > div {
