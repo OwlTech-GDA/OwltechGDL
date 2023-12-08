@@ -1,0 +1,36 @@
+.topbar-body {
+  flex: 1;
+  background-color: #240221;
+  color: white;
+  align-content: center;
+  justify-content: center;
+}
+
+.topbar-body ul {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+
+.topbar-body li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  text-align: center;
+  padding: 25px 0;
+  cursor: pointer;
+}
+
+.topbar-body li:hover {
+  font-weight: bolder;
+}
+
+.logo-topbar {
+  width: 100px;
+  object-fit: contain;
+}
