@@ -1,9 +1,14 @@
 .topbar-body {
-  flex: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   background-color: #240221;
   color: white;
   align-content: center;
+  flex: 1;
   justify-content: center;
+  z-index: 100;
 }
 
 .topbar-body ul {
