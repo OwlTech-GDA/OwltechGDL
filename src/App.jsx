@@ -15,9 +15,9 @@ function App() {
       <TopBar />
       <WhatIs />
       {/* <MisionVision />
-      <Robomaster />
+      <Robomaster /> */}
       <Members />
-      <Robots />
+      {/* <Robots />
       <Sponsors />
       <Contact /> */}
     </>
