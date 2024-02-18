@@ -35,7 +35,7 @@ jobs:
           SSH_IP: ${{ secrets.SERVER_IP }}
 
       - name: Deploy Site
-        run: ssh owltech-vps 'source ${{ secrets.DEPLOY_PATH }}/reload.sh'
+        run: ssh owltech-vps 'cd ${{ secrets.DEPLOY_PATH }}; source ./reload.sh'
 
       - name: Print Out Container Status
         run: ssh owltech-vps 'cd ${{ secrets.DEPLOY_PATH }} && docker ps'
