@@ -1,6 +1,11 @@
 name: Deploy 
 run-name: ${{ github.actor }} triggered a deploy 🚀
-on: [push]
+
+on: 
+  push:
+    branches:
+      - main
+
 jobs:
   Pipeline-Info:
     runs-on: ubuntu-latest
@@ -8,6 +13,7 @@ jobs:
       - run: echo "🎉 The job was triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 Running on a ${{ runner.os }} server!"
       - run: echo "🔎 Running on the branch ${{ github.ref }} from the repo ${{ github.repository }}."
+
   Deploy:
     runs-on: ubuntu-latest
     steps:
@@ -22,7 +28,7 @@ jobs:
             User $SSH_USER
             IdentityFile ~/.ssh/deploy-key.pem
             StrictHostKeyChecking no
-          END 
+          END
         env:
           SSH_USER: ${{ secrets.SERVER_USER }}
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
