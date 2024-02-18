@@ -1,18 +1,47 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: Deploy 
+run-name: ${{ github.actor }} triggered a deploy 🚀
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  Pipeline-Info:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Check out repository code
-        uses: actions/checkout@v4
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
+      - run: echo "🎉 The job was triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 Running on a ${{ runner.os }} server!"
+      - run: echo "🔎 Running on the branch ${{ github.ref }} from the repo ${{ github.repository }}."
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure SSH
         run: |
-          ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+          mkdir -p ~/.ssh/
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/deploy-key.pem
+          chmod 600 ~/.ssh/deploy-key.pem
+          cat >> ~/.ssh/config <<END
+          Host owltech-vps
+            HostName $SSH_IP
+            User $SSH_USER
+            IdentityFile ~/.ssh/deploy-key.pem
+            StrictHostKeyChecking no
+          END 
+        env:
+          SSH_USER: ${{ secrets.SERVER_USER }}
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
+          SSH_IP: ${{ secrets.SERVER_IP }}
+
+      - name: Deploy Site
+        run: ssh owltech-vps 'source ${{ secrets.DEPLOY_PATH }}/reload.sh'
+
+      - name: Print Out Container Status
+        run: ssh owltech-vps 'cd ${{ secrets.DEPLOY_PATH }} && docker ps'
+
+      - name: Update Status on Discord
+        run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚀 Deployment Successful"
+
+  Failed:
+    name: "Notify failure"
+    needs: Deploy
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update Status on Discord
+        run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚨 Deployment Failed"
