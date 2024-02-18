@@ -20,7 +20,7 @@ export default function WhatIs() {
             Owltech es un grupo estudiantil que se enfoca en la competencia
             Robomaster en la cual sus miembros pueden desarrollar hábilidades
             relacionadas a los temas robótica, programación, electrónica y
-            mecánica
+            mecánica.
           </p>
         </div>
       </div>
