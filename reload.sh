@@ -1,10 +1,10 @@
 #!/bin/bash
-if [ $(git branch | grep '*' | awk '{ print $2 }') == 'dev-docker' ]
+if [ $(git branch | grep '*' | awk '{ print $2 }') == 'main' ]
 then
 	echo "Currently in correct branch!"
 else
-	echo "Changing to 'dev-docker'"
-	git checkout 'dev-docker'
+	echo "Changing to 'main'"
+	git checkout 'main'
 fi
 
 git pull
