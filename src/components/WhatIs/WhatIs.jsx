@@ -18,7 +18,7 @@ export default function WhatIs() {
           <div />
           <p className="whatis-text">
             Owltech es un grupo estudiantil que se enfoca en la competencia
-            Robomaster en la cual sus miembros pueden desarrollar hábilidades
+            Robomaster en la cual sus miembros pueden desarrollar habilidades
             relacionadas a los temas robótica, programación, electrónica y
             mecánica.
           </p>
