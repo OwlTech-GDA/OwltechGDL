@@ -1,7 +1,7 @@
 version: '3'
 services:
-  Owltech-Vite-App:
-    container_name: Owltech-Vite-App
+  owltech-vite-app:
+    container_name: owltech-vite-app
     build: .
     restart: always
     ports:
@@ -19,7 +19,7 @@ services:
       - nginx_secrets:/etc/letsencrypt
       - ./user_conf.d:/etc/nginx/user_conf.d
     depends_on:
-      - Owltech-Vite-App
+      - owltech-vite-app
 
 volumes:
   nginx_secrets:
