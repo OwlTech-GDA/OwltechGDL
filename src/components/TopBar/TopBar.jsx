@@ -2,11 +2,13 @@ import "./TopBar.css";
 import Owltech from "../../assets/Logo 2.png";
 
 export default function TopBar({ refsObj }) {
-  const scrollToSection = (ref) => {
+  const scrollToSection = (ref, paddingBottom = 0) => {
     if (ref.current) {
-      setTimeout(() => {
-        ref.current.scrollIntoView({ behavior: "smooth" });
-      }, 100); // Adjust the delay as needed
+      const rect = ref.current.getBoundingClientRect();
+      window.scrollTo({
+        top: window.scrollY + rect.bottom - window.innerHeight + paddingBottom,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -26,7 +28,7 @@ export default function TopBar({ refsObj }) {
         <li onClick={() => scrollToSection(refsObj.members)}>
           ¿Quiénes somos?
         </li>
-        <li onClick={() => scrollToSection(refsObj.robots)}>
+        <li onClick={() => scrollToSection(refsObj.robots, 100)}>
           Conoce a los robots
         </li>
         <li>Sponsors</li>

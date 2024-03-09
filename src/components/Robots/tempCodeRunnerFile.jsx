@@ -1,1 +1,0 @@
-<div className="topFrame">Conoce a los robots</div>
