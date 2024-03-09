@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { createRef } from "react";
 import "./App.css";
 import WhatIs from "./components/WhatIs/WhatIs.jsx";
 import TopBar from "./components/TopBar/TopBar.jsx";
@@ -10,14 +10,34 @@ import Sponsors from "./components/Sponsors/Sponsors.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 
 function App() {
+  const whatIsRef = createRef();
+  const robomasterRef = createRef();
+  const membersRef = createRef();
+  const robotsRef = createRef();
+
+  const refsObj = {
+    whatIs: whatIsRef,
+    robomaster: robomasterRef,
+    members: membersRef,
+    robots: robotsRef,
+  };
+
   return (
     <div className="body">
-      <TopBar />
-      <WhatIs />
+      <TopBar refsObj={refsObj} />
+      <div ref={whatIsRef}>
+        <WhatIs />
+      </div>
       {/* <MisionVision />*/}
-      <Robomaster />
-      <Members />
-      <Robots />
+      <div ref={robomasterRef}>
+        <Robomaster />
+      </div>
+      <div ref={membersRef}>
+        <Members />
+      </div>
+      <div ref={robotsRef}>
+        <Robots />
+      </div>
       {/* <Sponsors />
       <Contact /> */}
     </div>

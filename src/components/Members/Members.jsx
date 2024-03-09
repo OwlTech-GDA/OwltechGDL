@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./Members.css";
 import MemberPhoto from "../../assets/ejemMember.png";
 
@@ -76,7 +76,7 @@ export default function Members() {
         <div className="carrousel-controllers">
           <div onClick={() => handleCarrousel(-1)}>{"<"}</div>
           {dotsCarrousel.map((i) => {
-            return <div>{page == i ? "•" : "◦"}</div>;
+            return <div key={i}>{page == i ? "•" : "◦"}</div>;
           })}
           <div onClick={() => handleCarrousel(1)}>{">"}</div>
         </div>
