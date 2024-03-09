@@ -5,7 +5,7 @@ export default function Robomaster() {
   return (
     <div className="robomaster-body">
       <div className="text-container">
-        <div className="title">¿Qué es robomaster?</div>
+        <div className="title">¿Qué es Robomaster?</div>
         <div className="description">
           Cada año, DJI organiza una competencia en la que los equipos
           participantes diseñan y construyen robots con funciones diversas para

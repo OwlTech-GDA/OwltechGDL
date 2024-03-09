@@ -11,9 +11,9 @@ export default function TopBar() {
         </li>
         <li>¿Qué es OwlTech?</li>
         <li>Misión/Visión</li>
-        <li>Robomaster</li>
-        <li>Equipo</li>
-        <li>Conoce a los Robots</li>
+        <li>¿Qué es Robomaster?</li>
+        <li>¿Quiénes somos</li>
+        <li>Conoce a los robots</li>
         <li>Sponsors</li>
         <li>Contacto</li>
       </ul>
