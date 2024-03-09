@@ -1,6 +1,6 @@
 .memebers-body {
   flex: 1;
-  height: 100vh;
+  height: 90vh;
   color: white;
   overflow: hidden;
 }
@@ -81,4 +81,15 @@
   gap: 10px;
   margin: 10px 0;
   font-size: 26px;
+}
+
+.carrousel-controllers > div {
+  -moz-user-select: none; /* firefox */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE*/
+  user-select: none; /* Standard syntax */
+}
+
+.carrousel-controllers > div:hover {
+  cursor: pointer;
 }

@@ -4,8 +4,8 @@ import MemberPhoto from "../../assets/ejemMember.png";
 
 export default function Members() {
   const containerRef = useRef(null);
-  const dotsCarrousel = [0, 1, 2, 3, 4];
-  const [members, setMembers] = useState([0, 1, 2, 3, 4]);
+  const dotsCarrousel = [0, 1, 2, 3, 4, 5, 6];
+  const [members, setMembers] = useState([0, 1, 2, 3, 4, 5, 6]);
 
   const [page, setPage] = useState(0);
   const [handlerPage, setHanlderPage] = useState(0);
@@ -55,7 +55,7 @@ export default function Members() {
       translationTotal + transitionStep * symbol
     }%)`;
     containerRef.current.offsetWidth;
-    containerRef.current.style.transition = "transform 1s";
+    containerRef.current.style.transition = "transform 0.75s";
     setTimeout(() => {
       containerRef.current.style.transform = `translateX(${translationTotal}%)`;
     }, 10);
@@ -63,7 +63,7 @@ export default function Members() {
   };
 
   const handleTransition = (value) => {
-    containerRef.current.style.transition = "transform 1s";
+    containerRef.current.style.transition = "transform 0.75s";
     setTranslationTotal(translationTotal + transitionStep * -value);
   };
 
