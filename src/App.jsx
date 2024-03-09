@@ -1,22 +1,22 @@
 import { useState } from "react";
 import "./App.css";
 import WhatIs from "./components/WhatIs/WhatIs.jsx";
-import TopBar from "./components/TopBar/TopBar/TopBar.jsx";
+import TopBar from "./components/TopBar/TopBar.jsx";
 import MisionVision from "./components/MisionVision/MisionVision.jsx";
 import Robomaster from "./components/Robomaster/Robomaster.jsx";
 import Members from "./components/Members/Members.jsx";
 import Robots from "./components/Robots/Robots.jsx";
 import Sponsors from "./components/Sponsors/Sponsors.jsx";
-// import Contact from "./components/Contact/Contact.jsx";
+import Contact from "./components/Contact/Contact.jsx";
 
 function App() {
   return (
     <div className="body">
-      {/* <TopBar />
+      <TopBar />
       <WhatIs />
-      <MisionVision />*/
+      {/* <MisionVision />*/}
       <Robomaster />
-      /*<Members /> */}
+      <Members />
       <Robots />
       {/* <Sponsors />
       <Contact /> */}
