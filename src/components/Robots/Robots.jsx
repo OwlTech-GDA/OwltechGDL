@@ -7,7 +7,7 @@ export default function Robots() {
       <div className="topFrame">Conoce a los robots</div>
       <div className="designFrame" style={{ backgroundImage: `url("src/assets/1.png")`}}/>
       
-      <div  style={{backgroundColor: "#34052F", width:"100%", height:"80vh"}}>
+      <div  style={{backgroundColor: "#34052F", width:"100%", height:"100vh", paddingBottom:"10vh"}}>
 
      
         <div className="allCardsImg">
@@ -38,13 +38,13 @@ export default function Robots() {
         
         <div className="allCardsTxt">
           <div className="CardText">
-            Lanza proyectiles de largo alcance
+            Lanza proyectiles de largo alcance.
           </div>
           <div className="CardText">
-            Lanza proyectiles de bajo alcance y es el atacante principal
+            Lanza proyectiles de bajo alcance y es el atacante principal.
           </div>
           <div className="CardText">
-            Es la última línea de defensa
+            Es la última línea de defensa.
           </div>
         </div>
         
