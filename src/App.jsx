@@ -11,15 +11,19 @@ import Contact from "./components/Contact/Contact.jsx";
 
 function App() {
   const whatIsRef = createRef();
+  const misionVisionRef = createRef();
   const robomasterRef = createRef();
   const membersRef = createRef();
   const robotsRef = createRef();
+  const contactRef = createRef();
 
   const refsObj = {
     whatIs: whatIsRef,
+    misionVision: misionVisionRef,
     robomaster: robomasterRef,
     members: membersRef,
     robots: robotsRef,
+    contact: contactRef,
   };
 
   return (
@@ -28,7 +32,7 @@ function App() {
       <div ref={whatIsRef}>
         <WhatIs />
       </div>
-      {/* <MisionVision />*/}
+      <div ref={misionVisionRef}>{/* <MisionVision /> */}</div>
       <div ref={robomasterRef}>
         <Robomaster />
       </div>
@@ -38,8 +42,10 @@ function App() {
       <div ref={robotsRef}>
         <Robots />
       </div>
-      {/* <Sponsors />
-      <Contact /> */}
+      {/* <Sponsors /> */}
+      <div ref={contactRef}>
+        <Contact />
+      </div>
     </div>
   );
 }

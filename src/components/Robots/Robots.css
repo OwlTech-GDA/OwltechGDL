@@ -1,11 +1,12 @@
 .robotsWrapper {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
+  background-color: #34052f;
+  justify-content: space-between;
 }
 
-.robotsList-wrapper {
-  background-color: #34052f;
-  padding: 100px 0;
+.robots-header {
+  flex: 1;
 }
 
 .topFrame {
@@ -13,47 +14,46 @@
   width: 100%;
   height: 15vh;
 
-  /*Text design*/
   font-size: 55px;
   font-weight: bold;
   color: white;
 
-  /*Centering text*/
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .designFrame {
   width: 100%;
   height: 5vh;
   background-size: contain;
 }
 
-/*For the robots images*/
+.allCards {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .Card {
-  width: 36%;
-  height: 20vh;
+  height: 70vh;
+  margin: 0 20px;
+  flex: 1;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
+
 .robImg {
-  width: 36%;
-  height: 20vh;
+  width: 60%;
+  aspect-ratio: 1/1;
   background-size: contain;
   background-repeat: no-repeat;
 }
-.allCardsImg {
-  display: flex;
-  justify-content: space-between;
-}
-/*For the robots images*/
-.allCardsTxtTitle {
-  padding-top: 80px;
-  display: flex;
-  justify-content: space-between;
-}
+
 .CardTextTitle {
-  width: 36%;
   color: white;
   font-size: 48px;
   text-decoration: underline;
@@ -62,16 +62,14 @@
   display: flex;
   justify-content: center;
 }
-/*For the robots descriptions*/
+
 .allCardsTxt {
   display: flex;
   justify-content: space-between;
 }
+
 .CardText {
   padding-top: 20px;
-  padding-right: 100px;
-  padding-left: 100px;
-  width: 36%;
   color: white;
   font-size: 30px;
   text-align: center;

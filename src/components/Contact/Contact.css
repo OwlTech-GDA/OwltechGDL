@@ -1,0 +1,56 @@
+.contact-body {
+  flex: 1;
+  height: 25vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-container > img {
+  width: 50%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  align-self: center;
+}
+
+.footer-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.footer-container > p {
+  flex: 1;
+  text-align: center;
+}
+
+.social-media {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-media .media {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  cursor: pointer;
+  margin-left: 150px;
+}
+
+.social-media .media > img {
+  width: 40px;
+  aspect-ratio: 1/1;
+}

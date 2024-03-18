@@ -21,18 +21,20 @@ export default function TopBar({ refsObj }) {
         <li onClick={() => scrollToSection(refsObj.whatIs)}>
           ¿Qué es OwlTech?
         </li>
-        <li>Misión/Visión</li>
+        <li onClick={() => scrollToSection(refsObj.misionVision)}>
+          Misión/Visión
+        </li>
         <li onClick={() => scrollToSection(refsObj.robomaster)}>
           ¿Qué es Robomaster?
         </li>
         <li onClick={() => scrollToSection(refsObj.members)}>
           ¿Quiénes somos?
         </li>
-        <li onClick={() => scrollToSection(refsObj.robots, 100)}>
+        <li onClick={() => scrollToSection(refsObj.robots)}>
           Conoce a los robots
         </li>
-        <li>Sponsors</li>
-        <li>Contacto</li>
+        {/* <li>Sponsors</li> */}
+        <li onClick={() => scrollToSection(refsObj.contact)}>Contacto</li>
       </ul>
     </div>
   );

@@ -1,0 +1,74 @@
+.misionVision-body {
+  width: 100%;
+  height: 95vh;
+  color: white;
+  background-color: black;
+  position: relative;
+}
+
+.mision-body {
+  opacity: 0;
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity 0.5s linear;
+}
+
+.mision-body.activate {
+  opacity: 1;
+}
+
+.mision-body .missionTitle {
+  margin: 0;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.mision-body .missionText {
+  margin: 0;
+  font-size: 42px;
+}
+
+.mision-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 150px;
+  text-align: center;
+  z-index: 10;
+  gap: 40px;
+}
+
+.mision-content > .arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 75px;
+  margin: 0;
+  width: 30px;
+  transform: translateY(50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.mision-content > .arrow.left {
+  left: 75px;
+  transform: translateY(50%) scaleX(-1);
+}
+
+.blackBg {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
