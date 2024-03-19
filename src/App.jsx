@@ -32,7 +32,9 @@ function App() {
       <div ref={whatIsRef}>
         <WhatIs />
       </div>
-      <div ref={misionVisionRef}>{/* <MisionVision /> */}</div>
+      <div ref={misionVisionRef}>
+        <MisionVision />
+      </div>
       <div ref={robomasterRef}>
         <Robomaster />
       </div>
@@ -42,7 +44,7 @@ function App() {
       <div ref={robotsRef}>
         <Robots />
       </div>
-      {/* <Sponsors /> */}
+        {/* <Sponsors /> */}
       <div ref={contactRef}>
         <Contact />
       </div>
