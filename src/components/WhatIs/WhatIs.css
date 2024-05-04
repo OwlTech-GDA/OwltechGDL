@@ -3,6 +3,7 @@
   flex: 1;
   height: 100vh;
   flex-direction: row;
+  width:100%;
 }
 
 .img-side {
@@ -47,12 +48,12 @@
 }
 
 .whatis-title {
-  font-size: 48px;
+  font-size: 3.8vw;  /*48 px*/
   font-weight: bold;
 }
 
 .whatis-text {
-  font-size: 32px;
+  font-size: 2.5vw; /*32 px*/
   font-weight: bold;
 }
 

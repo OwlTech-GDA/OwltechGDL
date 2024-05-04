@@ -25,13 +25,13 @@
 
 .mision-body .missionTitle {
   margin: 0;
-  font-size: 64px;
+  font-size: 5vw; /*64 px*/
   font-weight: bold;
 }
 
 .mision-body .missionText {
   margin: 0;
-  font-size: 42px;
+  font-size: 3.3vw; /*42 px*/
 }
 
 .mision-content {
