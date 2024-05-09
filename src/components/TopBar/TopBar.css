@@ -9,6 +9,9 @@
   flex: 1;
   justify-content: center;
   z-index: 100;
+  font-size:1.8vw;
+  
+  
 }
 
 .topbar-body ul {
@@ -18,7 +21,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 10px;
+  gap: 0.61vw; /*10px*/   /*CAMBIARLEEEE AQUIIIII*/
 }
 
 .topbar-body li {
@@ -27,7 +30,7 @@
   padding: 0;
   flex: 1;
   text-align: center;
-  padding: 25px 0;
+  padding: 1.5% 0; /*25px 0*/
   cursor: pointer;
 }
 
@@ -36,6 +39,6 @@
 }
 
 .logo-topbar {
-  width: 100px;
+  width: 6.12vw;  /*100 vw*/
   object-fit: contain;
 }
