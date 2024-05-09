@@ -9,7 +9,7 @@
   flex: 1;
   justify-content: center;
   z-index: 100;
-  font-size:1.8vw;
+  font-size:1.1vw;
   
   
 }
@@ -21,7 +21,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 0.61vw; /*10px*/   /*CAMBIARLEEEE AQUIIIII*/
+  gap: 0.61vw; /*10px*/  
 }
 
 .topbar-body li {
