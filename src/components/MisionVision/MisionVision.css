@@ -38,19 +38,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 150px;
+  margin: 0 11.9vw; /*150px*/
   text-align: center;
   z-index: 10;
-  gap: 40px;
+  gap: 2.5vw; /*40px*/
 }
 
 .mision-content > .arrow {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 75px;
+  right: 5.9vw; /*75px*/
   margin: 0;
-  width: 30px;
+  width: 2.3vw; /*30px*/
   transform: translateY(50%);
   background-size: contain;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@
 }
 
 .mision-content > .arrow.left {
-  left: 75px;
+  left: 5.9vw; /*75px*/
   transform: translateY(50%) scaleX(-1);
 }
 
