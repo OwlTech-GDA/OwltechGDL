@@ -32,6 +32,7 @@
 .allCards {
   flex: 1;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -75,4 +76,17 @@
   text-align: center;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 480px) {
+  .allCards{flex-direction: column;}
+  .designFrame {height: 2vh;}
+  .Card{ margin: 5vh 10vw;flex-direction: row;/*20px*/}
+  .robImg{width:25vw;margin-right:10vw;}
+  .textRobot{width:45vw}
+}
+
+@media (min-height: 700px) and  (max-width: 480px) {
+
+  .Card{ margin: 7vh 10vw;}
+
 }

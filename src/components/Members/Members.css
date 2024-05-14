@@ -92,3 +92,8 @@
 .carrousel-controllers > div:hover {
   cursor: pointer;
 }
+
+@media (max-width: 480px) {
+  .members-list{flex-direction: column;}
+ 
+}

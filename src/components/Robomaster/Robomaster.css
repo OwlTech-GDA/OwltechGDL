@@ -17,7 +17,7 @@
 
 .title {
   margin-bottom: 6vh; /*50px*/
-  font-size: 3.9vw; /*50px*/
+  font-size: 3.9vw; /*50px,*/
   color: white;
   justify-content: center;
   text-align: center;
@@ -55,4 +55,10 @@
   transform: scale(2);
   background-repeat: no-repeat;
   opacity: 0.2;
+}
+
+
+@media (max-width: 480px) {
+  .title { font-size: 5.2vw;} 
+  .description{font-size:3.7vw;}
 }
