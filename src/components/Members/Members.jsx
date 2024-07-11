@@ -75,11 +75,11 @@ export default function Members() {
       </header>
       <div className="members-wrapper">
         <div className="carrousel-controllers">
-          <div onClick={() => handleCarrousel(-1)}>{"<"}</div>
+          <div onClick={() => handleCarrousel(-1)}>{window.innerWidth < 1119 ?"ʌ":"<"}</div>
           {dotsCarrousel.map((i) => {
             return <div key={i}>{page == i ? "•" : "◦"}</div>;
           })}
-          <div onClick={() => handleCarrousel(1)}>{">"}</div>
+          <div onClick={() => handleCarrousel(1)}>{window.innerWidth < 1119 ?<span style={{ transform: 'rotate(180deg)', display: 'inline-block' }}>ʌ</span>:">"}</div>
         </div>
         <div
           className="members-list"

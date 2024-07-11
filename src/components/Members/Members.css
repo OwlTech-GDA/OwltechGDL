@@ -97,5 +97,5 @@
 @media (max-width: 1119px) {
   
   .members-list{flex-direction: column;}
-  .carrousel-controllers{flex-direction: column;}
+  .carrousel-controllers{flex-direction: column;margin-left:5vw}
 }
