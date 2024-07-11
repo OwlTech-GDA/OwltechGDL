@@ -10,9 +10,9 @@ export default function Members() {
   const [page, setPage] = useState(0);
   const [handlerPage, setHanlderPage] = useState(0);
 
-  const transitionStep = 33.33;
+  const transitionStep = window.innerWidth < 1119 ? 8 : 33.33;
   const [translationTotal, setTranslationTotal] = useState(0);
-  const transformStyle = `translateX(${translationTotal}%)`;
+  const transformStyle = window.innerWidth < 1119 ? `translateY(${-translationTotal}%)` : `translateX(${-translationTotal}%)`;
 
   const handleCarrousel = (value) => {
     const copyMembers = [...members];
@@ -51,13 +51,11 @@ export default function Members() {
 
   const delayTranslation = (symbol) => {
     containerRef.current.style.transition = "none";
-    containerRef.current.style.transform = `translateX(${
-      translationTotal + transitionStep * symbol
-    }%)`;
+    containerRef.current.style.transform = window.innerWidth < 1119 ? `translateY(${-translationTotal + transitionStep * symbol}%)` : `translateX(${-translationTotal + transitionStep * symbol}%)`;
     containerRef.current.offsetWidth;
     containerRef.current.style.transition = "transform 0.75s";
     setTimeout(() => {
-      containerRef.current.style.transform = `translateX(${translationTotal}%)`;
+      containerRef.current.style.transform = window.innerWidth < 1119 ? `translateY(${-translationTotal}%)` : `translateX(${-translationTotal}%)`;
     }, 10);
     containerRef.current.offsetWidth;
   };

@@ -33,13 +33,13 @@
 }
 
 .superiorImg {
-  width: 40%;
+  width: 40vw;
   height: 40vh;
   background-size: contain;
   position: absolute;
   left: 0px;
   top: 0px;
-  margin: -21.9vw 0vw 0vw -7.9vw; /*-180px 0px 0px -100px;*/
+  margin: -10vw 0vw 0vw -7.9vw; /*-180px 0px 0px -100px;*/
   transform: scale(1.5);
   background-repeat: no-repeat;
   opacity: 0.2;
@@ -47,7 +47,7 @@
 
 .bottomImg {
   position: absolute;
-  width: 25%;
+  width: 25vw;
   aspect-ratio: 1/1;
   right: 0;
   bottom: 0;
@@ -57,8 +57,15 @@
   opacity: 0.2;
 }
 
-
+@media (max-width: 767px) {
+  .superiorImg{width:50vw;margin: -2vw 0vw 0vw -7.9vw; /*-180px 0px 0px -100px;*/}
+  .bottomImg{width: 35vw;}
+}
 @media (max-width: 480px) {
   .title { font-size: 5.2vw;} 
   .description{font-size:3.7vw;}
+}
+@media (max-width: 350px) {
+  .title { font-size: 6vw;} 
+  .description{font-size:4.5vw;}
 }
