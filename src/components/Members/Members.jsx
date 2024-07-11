@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState} from "react";
 import "./Members.css";
 import MemberPhoto from "../../assets/ejemMember.png";
 
@@ -9,10 +9,11 @@ export default function Members() {
 
   const [page, setPage] = useState(0);
   const [handlerPage, setHanlderPage] = useState(0);
-
   const transitionStep = window.innerWidth < 1119 ? 8 : 33.33;
   const [translationTotal, setTranslationTotal] = useState(0);
-  const transformStyle = window.innerWidth < 1119 ? `translateY(${-translationTotal}%)` : `translateX(${-translationTotal}%)`;
+  const transformStyle = window.innerWidth < 1119 ? `translateY(${translationTotal}%)` : `translateX(${translationTotal}%)`;
+
+
 
   const handleCarrousel = (value) => {
     const copyMembers = [...members];
@@ -51,18 +52,20 @@ export default function Members() {
 
   const delayTranslation = (symbol) => {
     containerRef.current.style.transition = "none";
-    containerRef.current.style.transform = window.innerWidth < 1119 ? `translateY(${-translationTotal + transitionStep * symbol}%)` : `translateX(${-translationTotal + transitionStep * symbol}%)`;
-    containerRef.current.offsetWidth;
+    containerRef.current.style.transform = window.innerWidth < 1119 ? `translateY(${translationTotal + transitionStep * symbol}%)` : `translateX(${translationTotal + transitionStep * symbol}%)`;
+    window.innerWidth < 1119 ? containerRef.current.offsetHeight : containerRef.current.offsetWidth;
+    
     containerRef.current.style.transition = "transform 0.75s";
     setTimeout(() => {
-      containerRef.current.style.transform = window.innerWidth < 1119 ? `translateY(${-translationTotal}%)` : `translateX(${-translationTotal}%)`;
+      containerRef.current.style.transform = window.innerWidth < 1119 ? `translateY(${translationTotal}%)` : `translateX(${translationTotal}%)`;
     }, 10);
-    containerRef.current.offsetWidth;
+    window.innerWidth < 1119 ? containerRef.current.offsetHeight : containerRef.current.offsetWidth;
   };
 
   const handleTransition = (value) => {
     containerRef.current.style.transition = "transform 0.75s";
-    setTranslationTotal(translationTotal + transitionStep * -value);
+  setTranslationTotal(translationTotal + transitionStep * -value);
+    ;
   };
 
   return (
@@ -105,3 +108,5 @@ const Member = ({ item }) => {
     </div>
   );
 };
+
+
