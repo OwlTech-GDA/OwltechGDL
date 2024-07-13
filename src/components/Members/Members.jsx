@@ -9,9 +9,9 @@ export default function Members() {
 
   const [page, setPage] = useState(0);
   const [handlerPage, setHanlderPage] = useState(0);
-  const transitionStep = window.innerWidth < 1119 ? 8 : 33.33;
+  const transitionStep = window.innerWidth < 1119 ? 100: 33.33;
   const [translationTotal, setTranslationTotal] = useState(0);
-  const transformStyle = window.innerWidth < 1119 ? `translateY(${translationTotal}%)` : `translateX(${translationTotal}%)`;
+  const transformStyle = `translateX(${translationTotal}%)`;
 
 
 
@@ -52,14 +52,14 @@ export default function Members() {
 
   const delayTranslation = (symbol) => {
     containerRef.current.style.transition = "none";
-    containerRef.current.style.transform = window.innerWidth < 1119 ? `translateY(${translationTotal + transitionStep * symbol}%)` : `translateX(${translationTotal + transitionStep * symbol}%)`;
-    window.innerWidth < 1119 ? containerRef.current.offsetHeight : containerRef.current.offsetWidth;
+    containerRef.current.style.transform = `translateX(${translationTotal + transitionStep * symbol}%)`;
+  containerRef.current.offsetWidth;
     
     containerRef.current.style.transition = "transform 0.75s";
     setTimeout(() => {
-      containerRef.current.style.transform = window.innerWidth < 1119 ? `translateY(${translationTotal}%)` : `translateX(${translationTotal}%)`;
+      containerRef.current.style.transform = `translateX(${translationTotal}%)`;
     }, 10);
-    window.innerWidth < 1119 ? containerRef.current.offsetHeight : containerRef.current.offsetWidth;
+   containerRef.current.offsetWidth;
   };
 
   const handleTransition = (value) => {
@@ -74,13 +74,17 @@ export default function Members() {
         <p>¿Quienes somos?</p>
       </header>
       <div className="members-wrapper">
-        <div className="carrousel-controllers">
-          <div onClick={() => handleCarrousel(-1)}>{window.innerWidth < 1119 ?"ʌ":"<"}</div>
-          {dotsCarrousel.map((i) => {
-            return <div key={i}>{page == i ? "•" : "◦"}</div>;
-          })}
-          <div onClick={() => handleCarrousel(1)}>{window.innerWidth < 1119 ?<span style={{ transform: 'rotate(180deg)', display: 'inline-block' }}>ʌ</span>:">"}</div>
-        </div>
+        
+        
+          <div className="carrousel-controllers">
+            <div className="left-arrow" onClick={() => handleCarrousel(-1)}>{"<"}</div>
+            {dotsCarrousel.map((i) => {
+              return <div className="carrousel-dots" key={i}>{page == i ? "•" : "◦"}</div>;
+            })}
+            <div className="right-arrow" onClick={() => handleCarrousel(1)}>{">"}</div>
+          </div>
+        
+
         <div
           className="members-list"
           ref={containerRef}
@@ -89,7 +93,8 @@ export default function Members() {
           {members.map((item) => {
             return <Member item={item} key={item} />;
           })}
-        </div>
+
+        </div>      
       </div>
     </div>
   );
