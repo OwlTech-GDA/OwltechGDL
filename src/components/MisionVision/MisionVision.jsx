@@ -29,7 +29,7 @@ const MisionView = ({ option, setOption }) => {
         </header>
         <article>
           <p className="missionText">
-            Impulsar una generación de jóvenes con pensamiento crítico y
+            Impulsar una generación de jóvenes si con pensamiento crítico y
             científico que logren encontrar soluciones a los retos tecnológicos
             del futuro, fomentando proyectos donde el colectivo estudiantil sea
             protagonista.
