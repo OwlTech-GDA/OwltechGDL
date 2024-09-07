@@ -16,28 +16,37 @@ export default function Robots() {
             className="robImg"
             style={{ backgroundImage: `url("src/assets/PNG image 6 1.png")` }}
           />
-          <div className="CardTextTitle">Hero</div>
-          <div className="CardText">Lanza proyectiles de largo alcance.</div>
+          <div className="textRobot">
+            <div className="CardTextTitle">Hero</div>
+            <div className="CardText">Lanza proyectiles de largo alcance.</div>
+          </div>
         </div>
         <div className="Card">
           <div
             className="robImg"
             style={{ backgroundImage: `url("src/assets/PNG image 6 2.png")` }}
           />
-          <div className="CardTextTitle">Standard</div>
-          <div className="CardText">
-            Lanza proyectiles de bajo alcance y es el atacante principal.
+          <div className="textRobot">
+            <div className="CardTextTitle">Standard</div>
+            <div className="CardText">
+              Lanza proyectiles de bajo alcance y es el atacante principal.
+            </div>
           </div>
-        </div>
+          </div>
+        
         <div className="Card">
           <div
             className="robImg"
             style={{ backgroundImage: `url("src/assets/PNG image 6 3.png")` }}
           />
-          <div className="CardTextTitle">Sentry</div>
-          <div className="CardText">Es la última línea de defensa.</div>
+          <div className="textRobot">
+            <div className="CardTextTitle">Sentry</div>
+            <div className="CardText">Es la última línea de defensa.</div>
+          </div>
+
         </div>
       </div>
     </div>
+   
   );
 }

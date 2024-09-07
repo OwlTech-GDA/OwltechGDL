@@ -28,9 +28,9 @@ function App() {
 
   return (
     <div className="body">
-      <TopBar refsObj={refsObj} />
-      <div ref={whatIsRef}>
-        <WhatIs />
+      <TopBar refsObj={refsObj} className="top" />
+      <div ref={whatIsRef} >
+        <WhatIs className="whatIs" />
       </div>
       <div ref={misionVisionRef}>
         <MisionVision />

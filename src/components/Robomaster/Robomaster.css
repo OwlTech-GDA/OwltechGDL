@@ -9,15 +9,15 @@
 
 .text-container {
   display: flex;
-  padding: 0 200px;
+  padding: 0 15.8vw; /*200px*/
   height: 100vh;
   flex-direction: column;
   justify-content: center;
 }
 
 .title {
-  margin-bottom: 50px;
-  font-size: 50px;
+  margin-bottom: 6vh; /*50px*/
+  font-size: 3.9vw; /*50px,*/
   color: white;
   justify-content: center;
   text-align: center;
@@ -26,20 +26,20 @@
 }
 
 .description {
-  font-size: 30px;
+  font-size: 2.4vw;  /*30px*/
   color: white;
   justify-content: center;
   text-align: center;
 }
 
 .superiorImg {
-  width: 40%;
+  width: 40vw;
   height: 40vh;
   background-size: contain;
   position: absolute;
   left: 0px;
   top: 0px;
-  margin: -180px 0px 0px -100px;
+  margin: -10vw 0vw 0vw -7.9vw; /*-180px 0px 0px -100px;*/
   transform: scale(1.5);
   background-repeat: no-repeat;
   opacity: 0.2;
@@ -47,7 +47,7 @@
 
 .bottomImg {
   position: absolute;
-  width: 25%;
+  width: 25vw;
   aspect-ratio: 1/1;
   right: 0;
   bottom: 0;
@@ -55,4 +55,17 @@
   transform: scale(2);
   background-repeat: no-repeat;
   opacity: 0.2;
+}
+
+@media (max-width: 767px) {
+  .superiorImg{width:50vw;margin: -2vw 0vw 0vw -7.9vw; /*-180px 0px 0px -100px;*/}
+  .bottomImg{width: 35vw;}
+}
+@media (max-width: 480px) {
+  .title { font-size: 5.2vw;} 
+  .description{font-size:3.7vw;}
+}
+@media (max-width: 350px) {
+  .title { font-size: 6vw;} 
+  .description{font-size:4.5vw;}
 }
