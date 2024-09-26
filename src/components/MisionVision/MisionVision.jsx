@@ -35,11 +35,13 @@ const MisionView = ({ option, setOption }) => {
             protagonista.
           </p>
         </article>
-        <div
-          className="arrow"
-          style={{ backgroundImage: `url("src/assets/arrow.png")` }}
-          onClick={() => setOption(MenuOptions.VISION)}
-        />
+        
+          <div
+            className="arrow"
+            style={{ backgroundImage: `url("src/assets/arrow.png")` }}
+            onClick={() => setOption(MenuOptions.VISION)}
+          />
+        
       </div>
       <div className="blackBg" />
     </div>
@@ -57,11 +59,13 @@ const VisionView = ({ option, setOption }) => {
       }}
     >
       <div className="mision-content">
-        <div
-          className="arrow left"
-          style={{ backgroundImage: `url("src/assets/arrow.png")` }}
-          onClick={() => setOption(MenuOptions.MISION)}
-        />
+        
+          <div
+            className="arrow left"
+            style={{ backgroundImage: `url("src/assets/arrow.png")` }}
+            onClick={() => setOption(MenuOptions.MISION)}
+          />
+       
         <header>
           <p className="missionTitle">Visión</p>
         </header>

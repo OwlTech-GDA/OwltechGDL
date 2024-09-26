@@ -46,9 +46,9 @@
   align-items: center;
   display: flex;
   flex-direction: row;
-  gap: 1.6vw; /*20px*/
+  gap: 0.8vw; /*20px*/
   cursor: pointer;
-  margin-left: 8vw; /*150 px*/
+  margin-left: 6vw; /*150 px*/
 }
 
 .social-media .media > img {
