@@ -12,9 +12,9 @@ export default function Contact() {
 
   return (
     <div className="contact-body">
-      <di className="logo-container">
+      <div className="logo-container">
         <img src={Logo} />
-      </di>
+      </div>
       <div className="footer-container">
         <p>OwlTech | Tecnológico de Monterrey</p>
       </div>

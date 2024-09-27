@@ -1,6 +1,6 @@
 .contact-body {
   flex: 1;
-  height: 25vh;
+  height: 38vh;
   background-color: black;
   display: flex;
   flex-direction: row;
@@ -46,9 +46,9 @@
   align-items: center;
   display: flex;
   flex-direction: row;
-  gap: 1.6vw; /*20px*/
+  gap: 0.8vw; /*20px*/
   cursor: pointer;
-  margin-left: 11.9vw; /*150 px*/
+  margin-left: 6vw; /*150 px*/
 }
 
 .social-media .media > img {

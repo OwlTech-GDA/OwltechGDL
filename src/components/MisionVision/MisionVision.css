@@ -42,6 +42,7 @@
   text-align: center;
   z-index: 10;
   gap: 2.5vw; /*40px*/
+
 }
 
 .mision-content > .arrow {
@@ -51,16 +52,21 @@
   right: 5.9vw; /*75px*/
   margin: 0;
   width: 2.3vw; /*30px*/
+  
   transform: translateY(50%);
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
+ 
+  
 }
 
-.mision-content > .arrow.left {
+.mision-content >.arrow.left {
   left: 5.9vw; /*75px*/
   transform: translateY(50%) scaleX(-1);
+  
 }
+
 
 .blackBg {
   z-index: 1;
