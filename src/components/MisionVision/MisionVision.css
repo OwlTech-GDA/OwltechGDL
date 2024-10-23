@@ -51,10 +51,12 @@
   bottom: 0;
   right: 5.9vw; /*75px*/
   margin: 0;
-  width: 2.3vw; /*30px*/
-  
-  transform: translateY(50%);
+  width: 3vw; /*30px*/
+  height:95vh;
+
+  /*transform: translateY(50%);*/
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
  
@@ -63,7 +65,12 @@
 
 .mision-content >.arrow.left {
   left: 5.9vw; /*75px*/
-  transform: translateY(50%) scaleX(-1);
+  width: 3vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transform: scaleX(-1);
   
 }
 
