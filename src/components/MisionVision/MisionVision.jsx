@@ -35,12 +35,11 @@ const MisionView = ({ option, setOption }) => {
             protagonista.
           </p>
         </article>
-        
-          <div
-            className="arrow"
-            style={{ backgroundImage: `url("src/assets/arrow.png")` }}
-            onClick={() => setOption(MenuOptions.VISION)}
-          />
+          <div 
+              className="arrow" 
+              style={{ backgroundImage: `url("src/assets/arrow.png")` }} 
+              onClick={() => setOption(MenuOptions.VISION)}>
+          </div>
         
       </div>
       <div className="blackBg" />
