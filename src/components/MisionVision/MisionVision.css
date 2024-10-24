@@ -49,22 +49,25 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 5.9vw; /*75px*/
+  right: 0vw; /*75px*/
   margin: 0;
-  width: 2.3vw; /*30px*/
-  
-  transform: translateY(50%);
-  background-size: contain;
+  width: 12vw; /*30px*/
+  height:95vh;
+  background-position: center;
+  background-size:3vw;
   background-repeat: no-repeat;
   cursor: pointer;
- 
-  
 }
 
+
 .mision-content >.arrow.left {
-  left: 5.9vw; /*75px*/
-  transform: translateY(50%) scaleX(-1);
-  
+  left: 0vw; /*75px*/
+  width: 12vw;
+  background-position: center;
+  background-size:3vw;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transform: scaleX(-1);
 }
 
 
