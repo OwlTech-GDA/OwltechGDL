@@ -1,9 +1,8 @@
 .contact-body {
   flex: 1;
-  height: 38vh;
+  height: auto;
   background-color: black;
   display: flex;
-  flex-direction: row;
   color: white;
   align-items: center;
   justify-content: space-around;
@@ -54,4 +53,16 @@
 .social-media .media > img {
   width: 3.2vw; /*40px*/
   aspect-ratio: 1/1;
+}
+
+
+@media (max-width: 1000px)  {
+  .contact-body{
+    flex-direction: column !important;
+    background-color: black;
+  }
+
+  .logo-container > img{
+    width: 25%;
+  } 
 }
